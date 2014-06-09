@@ -66,6 +66,8 @@ terminal-table gemの日本語対応版にあたります。
 ## Usage
 ### オプション指定なし  
 ~~~ruby
+require 'kosi'
+
 kosi = Kosi::Table.new
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
@@ -82,6 +84,8 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 
 ### Align指定
 ~~~ruby
+require 'kosi'
+
 kosi = Kosi::Table.new({align: Kosi::Align::TYPE::CENTER})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 kosi = Kosi::Table.new({align: Kosi::Align::TYPE::RIGHT})
@@ -109,6 +113,8 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 
 ### ConnectorChar指定
 ~~~ruby
+require 'kosi'
+
 kosi = Kosi::Table.new
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 kosi = Kosi::Table.new({connector_char: 'x'})
