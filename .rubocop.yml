@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - !ruby/regexp /spec\/*\.rb$/
+
+AsciiComments:
+  Enabled: false
+
+RegexpLiteral:
+  MaxSlashes: 0
+
+ClassLength:
+  Max: 150
