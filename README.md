@@ -1,6 +1,7 @@
 # Kosi
 
 [![Build Status](https://travis-ci.org/tbpgr/kosi.png?branch=master)](https://travis-ci.org/tbpgr/kosi)
+[![Coverage Status](https://coveralls.io/repos/tbpgr/kosi/badge.png)](https://coveralls.io/r/tbpgr/kosi)
 [![Code Climate](https://codeclimate.com/github/tbpgr/kosi.png)](https://codeclimate.com/github/tbpgr/kosi)
 
 ターミナルアプリケーション用表フォーマットサポートツール。格子。
