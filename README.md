@@ -1,5 +1,7 @@
 # Kosi
 
+[![Build Status](https://travis-ci.org/tbpgr/kosi.png?branch=master)](https://travis-ci.org/tbpgr/kosi)
+
 ターミナルアプリケーション用表フォーマットサポートツール。格子。
 
 ## Installation
