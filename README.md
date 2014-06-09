@@ -24,7 +24,7 @@ terminal-table gemの日本語対応版にあたります。
 具体的には  
 
 * Unicode 1-127 => ASCII。1文字分として計算
-* Unicode 65_377(0xff61)..65_439(0xff9f) => 半角カナ。1文字分として計算
+* Unicode 65377(0xff61)..65439(0xff9f) => 半角カナ。1文字分として計算
 * その他 => 全角として扱う。2文字分として計算
 
 ## Options
@@ -279,7 +279,7 @@ version 0.0.1 : first release
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/kosi/fork )
+1. Fork it ( https://github.com/tbpgr/kosi/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
