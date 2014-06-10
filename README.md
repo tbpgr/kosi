@@ -279,6 +279,7 @@ x*******x*******x*******x
 
 ## History
 
+version 0.0.2 : ANSI Escape Sequence利用時にフォーマットが崩れないように変更
 version 0.0.1 : first release
 
 ## Contributing

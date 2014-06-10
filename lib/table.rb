@@ -22,7 +22,8 @@ module Kosi
       check_rows_type(rows)
       check_each_array_length(rows)
       header = read_header
-      max_lengths = get_max_lengths(rows, header)
+      escaped_rows = escape_ansi_escape_sequence(rows)
+      max_lengths = get_max_lengths(escaped_rows, header)
       table_format_rows = get_table_format_rows(rows, max_lengths, header)
       table_format_rows.join("\n") + "\n"
     end
@@ -111,6 +112,16 @@ module Kosi
     def read_header
       return nil if @header.empty?
       @header.value
+    end
+
+    def escape_ansi_escape_sequence(rows)
+      rows.reduce([]) do |r, e|
+        r << e.map do |f|f.to_s.gsub(/\x1b(\[|\(|\))[;?0-9]*[0-9A-Za-z]/, '')
+            .gsub(/\x1b(\[|\(|\))[;?0-9]*[0-9A-Za-z]/, '')
+            .gsub(/(\x03|\x1a)/, '')
+        end
+        r
+      end
     end
 
     def formated_header(header, max_lengths)

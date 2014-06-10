@@ -97,6 +97,17 @@ describe Kosi::Table do
 +----+-------+------+
         EOS
       },
+      {
+        case_no: 4,
+        case_title: 'use ANSI Escape sequence case',
+        options: nil,
+        inputs: [["\e[31mhello\e[0m"]],
+        expected: <<-EOS
++-----+
+|\e[31mhello\e[0m|
++-----+
+        EOS
+      },
     ]
 
     cases.each do |c|
