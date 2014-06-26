@@ -13,7 +13,7 @@ describe Kosi::Validators::RowType do
       {
         case_no: 2,
         case_title: 'Not Array case',
-        inputs: "not Array",
+        inputs: 'not Array',
         expect_error: true,
         error_class: ArgumentError
       },
@@ -29,10 +29,10 @@ describe Kosi::Validators::RowType do
 
           # -- when/then --
           if c[:expect_error]
-            expect{ Kosi::Validators::RowType.validate(c[:inputs]) }.to raise_error(c[:error_class])
+            expect { Kosi::Validators::RowType.validate(c[:inputs]) }.to raise_error(c[:error_class])
             next
           else
-            expect{ Kosi::Validators::RowType.validate(c[:inputs]) }.not_to raise_error
+            expect { Kosi::Validators::RowType.validate(c[:inputs]) }.not_to raise_error
           end
         ensure
           case_after c

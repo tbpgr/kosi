@@ -71,7 +71,7 @@ describe Kosi::Table do
       {
         case_no: 2,
         case_title: 'use header case',
-        options: {header: %w{header1 header2 header3}},
+        options: { header: %w(header1 header2 header3) },
         inputs: [[1, 2, 3], [1111, '２22アｱ', '３3イｲ']],
         expected: <<-EOS
 +-------+-------+-------+
@@ -85,7 +85,7 @@ describe Kosi::Table do
       {
         case_no: 3,
         case_title: 'Enable SeparateEachRow case',
-        options: {separate_each_row: true},
+        options: { separate_each_row: true },
         inputs: [[1, 2, 3], [1111, '２22アｱ', '３3イｲ'], [1, 2, 3]],
         expected: <<-EOS
 +----+-------+------+

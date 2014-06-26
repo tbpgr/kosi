@@ -34,10 +34,10 @@ describe Kosi::Validators::EachArrayLength do
 
           # -- when/then --
           if c[:expect_error]
-            expect{ Kosi::Validators::EachArrayLength.validate(c[:inputs]) }.to raise_error(c[:error_class])
+            expect { Kosi::Validators::EachArrayLength.validate(c[:inputs]) }.to raise_error(c[:error_class])
             next
           else
-            expect{ Kosi::Validators::EachArrayLength.validate(c[:inputs]) }.not_to raise_error
+            expect { Kosi::Validators::EachArrayLength.validate(c[:inputs]) }.not_to raise_error
           end
         ensure
           case_after c
