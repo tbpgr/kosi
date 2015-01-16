@@ -7,6 +7,7 @@ gem "simplecov", "~> 0.8.2"
 gem "activesupport", "~> 4.0.1"
 gem "activemodel", "~> 4.0.2"
 gem "tudu", "~> 0.0.4"
+gem "unicode", ">= 0.4.4"
 group :test do
   gem 'coveralls', require: false
 end

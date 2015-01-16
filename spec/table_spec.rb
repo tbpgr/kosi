@@ -108,6 +108,18 @@ describe Kosi::Table do
 +-----+
         EOS
       },
+      {
+        case_no: 5,
+        case_title: 'Unicode width case',
+        options: nil,
+        inputs: [['$100'], ['¥100']],
+        expected: <<-EOS
++----+
+|$100|
+|¥100|
++----+
+        EOS
+      },
     ]
 
     cases.each do |c|

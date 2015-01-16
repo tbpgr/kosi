@@ -1,6 +1,7 @@
 # encoding: utf-8
 require 'kosi'
 require 'kosi/validators'
+require 'unicode'
 
 # TableFormat for Terminal(Use Japanese Charactors)
 module Kosi
@@ -59,17 +60,8 @@ module Kosi
 
     def ascii1_other2_size(column)
       column.split('').reduce(0) do |a, e|
-        a += half?(e) ? 1 : 2
+        a += Unicode.width(e)
         a
-      end
-    end
-
-    def half?(char)
-      case char.ord
-      when 1..127, 65_377..65_439
-        true
-      else
-        false
       end
     end
 
