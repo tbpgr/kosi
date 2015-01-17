@@ -26,12 +26,6 @@ Or install it yourself as:
 :link: [terminal-table gem](https://github.com/tj/terminal-table) の日本語対応版にあたります。  
 （terminal-tableはASCII対応のみなので全角文字が混ざるとテーブルレイアウトが崩れる）  
 
-具体的には  
-
-* Unicode 1-127 => ASCII。1文字分として計算
-* Unicode 65377(0xff61)..65439(0xff9f) => 半角カナ。1文字分として計算
-* その他 => 全角として扱う。2文字分として計算
-
 ## :o2: Options
 ### :icecream: Align
 配置指定。右寄せ、左寄せ、中央を選択可能。  
