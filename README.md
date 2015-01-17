@@ -7,7 +7,7 @@
 
 ターミナルアプリケーション用表フォーマットサポートツール。格子。
 
-## Installation
+## :cloud::arrow_down: Installation
 
 Add this line to your application's Gemfile:
 
@@ -21,9 +21,9 @@ Or install it yourself as:
 
     $ gem install kosi
 
-## Description
+## :man: Description
 2次元配列をテーブルフォーマットにして出力します。  
-terminal-table gemの日本語対応版にあたります。  
+:link: [terminal-table gem](https://github.com/tj/terminal-table) の日本語対応版にあたります。  
 （terminal-tableはASCII対応のみなので全角文字が混ざるとテーブルレイアウトが崩れる）  
 
 具体的には  
@@ -32,8 +32,8 @@ terminal-table gemの日本語対応版にあたります。
 * Unicode 65377(0xff61)..65439(0xff9f) => 半角カナ。1文字分として計算
 * その他 => 全角として扱う。2文字分として計算
 
-## Options
-### Align
+## :o2: Options
+### :icecream: Align
 配置指定。右寄せ、左寄せ、中央を選択可能。  
 
 | 設定可能パラメータ | 説明 |
@@ -42,7 +42,7 @@ terminal-table gemの日本語対応版にあたります。
 |Kosi::Align::TYPE::LEFT|左寄せ。デフォルト|
 |Kosi::Align::TYPE::CENTER|中央|
 
-### ConnectorChar
+### :icecream: ConnectorChar
 表の結合部に表示するテキスト。1文字で指定。  
 下記で言うところの 「+」がConnectorChar。  
 
@@ -52,24 +52,24 @@ terminal-table gemの日本語対応版にあたります。
 +-----+------+-------+
 ~~~
 
-### Header
+### :icecream: Header
 表のヘッダー。配列で指定。  
 デフォルトはヘッダーなし。  
 
-### HorizontalBorderChar
+### :icecream: HorizontalBorderChar
 水平線を1文字で設定。  
-デフォルトは「-」  
+デフォルトは「-」(半角ハイフン)  
 
-### SeparateEachRow
+### :icecream: SeparateEachRow
 各行に区切り線を入れるかどうか。  
 デフォルトは「false」  
 
-### VerticalBorderChar
+### :icecream: VerticalBorderChar
 垂直線を1文字で設定。  
-デフォルトは「|」  
+デフォルトは「|」（パイプ）  
 
-## Usage
-### オプション指定なし  
+## :scroll: Usage
+### :shaved_ice: オプション指定なし  
 ~~~ruby
 require 'kosi'
 
@@ -77,7 +77,7 @@ kosi = Kosi::Table.new
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
-出力  
+* 出力  
 ※GitHubの表示上ずれているかもしれませんが、等幅フォント利用時にそろいます。
 
 ~~~
@@ -87,7 +87,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 +-----+------+-------+
 ~~~
 
-### Align指定
+### :shaved_ice: Align指定
 ~~~ruby
 require 'kosi'
 
@@ -99,7 +99,7 @@ kosi = Kosi::Table.new({align: Kosi::Align::TYPE::LEFT})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -116,7 +116,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 +-----+------+-------+
 ~~~
 
-### ConnectorChar指定
+### :shaved_ice: ConnectorChar指定
 ~~~ruby
 require 'kosi'
 
@@ -128,7 +128,7 @@ kosi = Kosi::Table.new({connector_char: '$'})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -146,7 +146,7 @@ $-----$------$-------$
 ~~~
 
 
-### Header指定
+### :shaved_ice: Header指定
 ~~~ruby
 require 'kosi'
 
@@ -157,7 +157,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -172,7 +172,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 +-------+-------+-------+
 ~~~
 
-### HorizontalBorderChar指定
+### :shaved_ice: HorizontalBorderChar指定
 ~~~ruby
 require 'kosi'
 
@@ -182,7 +182,7 @@ kosi = Kosi::Table.new({horizontal_border_char: '*'})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -195,7 +195,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 +*****+******+*******+
 ~~~
 
-### SeparateEachRow指定
+### :shaved_ice: SeparateEachRow指定
 ~~~ruby
 require 'kosi'
 
@@ -205,7 +205,7 @@ kosi = Kosi::Table.new({separate_each_row: true})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333'], [*'a'..'c']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -222,7 +222,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333'], [
 +-----+------+-------+
 ~~~
 
-### VerticalBorderChar指定
+### :shaved_ice: VerticalBorderChar指定
 ~~~ruby
 require 'kosi'
 
@@ -232,7 +232,7 @@ kosi = Kosi::Table.new({vertical_border_char: '#'})
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 +-----+------+-------+
@@ -245,7 +245,7 @@ print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333']])
 +-----+------+-------+
 ~~~
 
-### 複合オプション
+### :shaved_ice: 複合オプション
 様々なオプションを一気に指定してみます
 
 ~~~ruby
@@ -264,7 +264,7 @@ kosi = Kosi::Table.new(
 print kosi.render([[*'a'..'c'], ['ほｹﾞ1', 'ひｹﾞ22', 'へｹﾞ333'], [*'a'..'c']])
 ~~~
 
-出力  
+* 出力  
 
 ~~~
 x*******x*******x*******x
@@ -278,12 +278,7 @@ x*******x*******x*******x
 x*******x*******x*******x
 ~~~
 
-## History
-
-* version 0.0.2 : ANSI Escape Sequence利用時にフォーマットが崩れないように変更
-* version 0.0.1 : first release
-
-## Contributing
+## :two_men_holding_hands: Contributing :two_women_holding_hands:
 
 1. Fork it ( https://github.com/tbpgr/kosi/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)

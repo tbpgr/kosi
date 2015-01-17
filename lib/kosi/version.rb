@@ -1,4 +1,4 @@
 # TableFormat for Terminal(Use Japanese Charactors)
 module Kosi
-  VERSION = '0.0.2'
+  VERSION = '1.0.0'
 end
