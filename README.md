@@ -278,6 +278,10 @@ x*******x*******x*******x
 x*******x*******x*******x
 ~~~
 
+## :memo: 注意事項
+* gem のバージョンが 2.0.1 以下だと unicode gem でエラーが発生するケースがあるようです。
+  その場合は gem を 2.0.2 以上に Update してください。
+
 ## :two_men_holding_hands: Contributing :two_women_holding_hands:
 
 1. Fork it ( https://github.com/tbpgr/kosi/fork )
