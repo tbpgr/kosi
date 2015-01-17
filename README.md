@@ -7,6 +7,20 @@
 
 ターミナルアプリケーション用表フォーマットサポートツール。格子。
 
+## :notes: Images
+### :baby_chick: Before
+
+:rage1::rage1::rage1:,:alien:,:older_woman::older_woman:
+:older_man:,:dog:,:baby::baby::baby::baby::baby::baby::baby:
+:cat::cat:,:octocat::octocat::octocat::octocat::octocat::octocat::octocat:,:octopus::octopus::octopus::octopus::octopus:
+
+### :chicken: After
++-----------+---------------------------+---------------------------+
+|:rage1::rage1::rage1:|:alien::grey_question::grey_question::grey_question::grey_question::grey_question::grey_question:|:older_woman::older_woman::grey_question::grey_question::grey_question::grey_question::grey_question:|
+|:older_man::grey_question::grey_question:|:dog::grey_question::grey_question::grey_question::grey_question::grey_question::grey_question:|:baby::baby::baby::baby::baby::baby::baby:|
+|:cat::cat::grey_question:|:octocat::octocat::octocat::octocat::octocat::octocat::octocat:|:octopus::octopus::octopus::octopus::octopus::grey_question::grey_question:|
++-----------+---------------------------+---------------------------+
+
 ## :cloud::arrow_down: Installation
 
 Add this line to your application's Gemfile:
