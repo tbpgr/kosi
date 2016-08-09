@@ -1,6 +1,7 @@
 # Kosi
 
 [![Gem Version](https://badge.fury.io/rb/kosi.svg)](http://badge.fury.io/rb/kosi)
+[![Gem Downloads](https://img.shields.io/gem/dt/kosi.svg)](http://badge.fury.io/rb/kosi)
 [![Build Status](https://travis-ci.org/tbpgr/kosi.png?branch=master)](https://travis-ci.org/tbpgr/kosi)
 [![Coverage Status](https://coveralls.io/repos/tbpgr/kosi/badge.png)](https://coveralls.io/r/tbpgr/kosi)
 [![Code Climate](https://codeclimate.com/github/tbpgr/kosi.png)](https://codeclimate.com/github/tbpgr/kosi)
