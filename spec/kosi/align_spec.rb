@@ -12,7 +12,7 @@ describe Kosi::Align do
         text: 'h',
         max_value: 3,
         diff: 0,
-        expected: Kosi::Align::TYPE::LEFT,
+        expected_option: Kosi::Align::TYPE::LEFT,
         expected: 'h  '
       },
       {
