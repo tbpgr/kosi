@@ -31,8 +31,8 @@ describe Kosi::VerticalBorderChar do
 
           # -- given --
           if c[:expect_error]
-            -> { Kosi::VerticalBorderChar.new(c[:options]) }
-                .should raise_error(ArgumentError)
+            expect { Kosi::VerticalBorderChar.new(c[:options]) }
+              .to raise_error(ArgumentError)
             next
           end
           vertical_border_char = Kosi::VerticalBorderChar.new(c[:options])
