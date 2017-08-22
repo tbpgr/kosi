@@ -1,3 +1,10 @@
+## v.1.0.1
+2017/08/22
+
+### Update Feature
+* Gem のアップデート by pocke
+    * https://github.com/tbpgr/kosi/pull/2
+
 ## v.1.0.0
 2015/01/17
 
