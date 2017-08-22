@@ -31,8 +31,8 @@ describe Kosi::ConnectorChar do
 
           # -- given --
           if c[:expect_error]
-            -> { Kosi::ConnectorChar.new(c[:options]) }
-                .should raise_error(ArgumentError)
+            expect { Kosi::ConnectorChar.new(c[:options]) }
+              .to raise_error(ArgumentError)
             next
           end
           connector_char = Kosi::ConnectorChar.new(c[:options])

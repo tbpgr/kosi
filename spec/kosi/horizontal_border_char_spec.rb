@@ -31,8 +31,8 @@ describe Kosi::HorizontalBorderChar do
 
           # -- given --
           if c[:expect_error]
-            -> { Kosi::HorizontalBorderChar.new(c[:options]) }
-                .should raise_error(ArgumentError)
+            expect { Kosi::HorizontalBorderChar.new(c[:options]) }
+              .to raise_error(ArgumentError)
             next
           end
           horizontal_border_char = Kosi::HorizontalBorderChar.new(c[:options])
