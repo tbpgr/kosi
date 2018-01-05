@@ -2,7 +2,7 @@
 require 'kosi/options'
 require 'kosi/char_option'
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
   # HorizontalBorderChar
   class HorizontalBorderChar < CharOption

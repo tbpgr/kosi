@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
   # Options
   module OptionKeys

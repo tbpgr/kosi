@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'kosi/options'
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
   # SeparateEachRow
   class SeparateEachRow

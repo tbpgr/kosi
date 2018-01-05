@@ -3,7 +3,7 @@ require 'kosi'
 require 'kosi/validators'
 require 'unicode'
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
   # Table
   class Table

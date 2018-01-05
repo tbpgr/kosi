@@ -8,6 +8,6 @@ require 'kosi/separate_each_row'
 require 'kosi/vertical_border_char'
 require 'table'
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
 end
