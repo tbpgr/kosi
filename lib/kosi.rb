@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'kosi/align'
 require 'kosi/connector_char'
 require 'kosi/header'

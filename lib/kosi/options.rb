@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 # TableFormat for Terminal(Use Japanese Charactors)
 module Kosi

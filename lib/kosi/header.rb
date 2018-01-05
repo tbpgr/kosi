@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'kosi/options'
 
 # TableFormat for Terminal(Use Japanese Charactors)
