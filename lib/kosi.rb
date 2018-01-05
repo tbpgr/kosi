@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'kosi/align'
 require 'kosi/connector_char'
 require 'kosi/header'

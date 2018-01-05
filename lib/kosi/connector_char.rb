@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'kosi/options'
 require 'kosi/char_option'
 
