@@ -1,10 +1,10 @@
-# encoding: utf-8
+# frozen_string_literal: true
 require 'kosi'
 require 'kosi/validators'
 require 'unicode/display_width/no_string_ext'
 require 'unicode/emoji'
 
-# TableFormat for Terminal(Use Japanese Charactors)
+# TableFormat for Terminal(Use Japanese Characters)
 module Kosi
   # Table
   class Table
