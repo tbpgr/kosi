@@ -1,3 +1,12 @@
+## v.1.1.0
+2018/01/08
+
+### Update Feature
+* unicode gem の代わりに unicode-display_width と unicode-emoji を使用 by
+    * https://github.com/tbpgr/kosi/pull/3
+* Ruby 2.5対応等
+    * https://github.com/tbpgr/kosi/pull/4
+
 ## v.1.0.1
 2017/08/22
 
