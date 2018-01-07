@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 require 'kosi'
 require 'kosi/validators'
-require 'unicode'
+require 'unicode/display_width/no_string_ext'
+require 'unicode/emoji'
 
 # TableFormat for Terminal(Use Japanese Characters)
 module Kosi
@@ -60,7 +61,7 @@ module Kosi
 
     def ascii1_other2_size(column)
       column.split('').reduce(0) do |a, e|
-        a += Unicode.width(e)
+        a += Unicode::DisplayWidth.of(e, 1, {}, emoji: true)
         a
       end
     end
