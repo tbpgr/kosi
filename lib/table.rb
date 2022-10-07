@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'kosi'
 require 'kosi/validators'
-require 'unicode/display_width/no_string_ext'
+require 'unicode/display_width'
 require 'unicode/emoji'
 
 # TableFormat for Terminal(Use Japanese Characters)
