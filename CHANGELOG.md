@@ -1,3 +1,12 @@
+## v1.3.0
+2022/10/20
+
+### Update Feature
+* Ruby2.6, 2.7, 3.0, 3.1をサポート
+    * https://github.com/tbpgr/kosi/pull/6
+* janlelis/unicode-display_widthの警告対応
+    * https://github.com/tbpgr/kosi/pull/7
+
 ## v1.2.0
 2018/01/18
 
